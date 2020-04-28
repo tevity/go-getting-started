@@ -2,12 +2,12 @@ package models
 
 //User a user
 type User struct {
-	ID int
+	ID        int
 	FirstName string
-	LastName string
+	LastName  string
 }
 
 var (
-	users []*User
+	users  []*User
 	nextID = 1
 )

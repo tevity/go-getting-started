@@ -1,15 +1,16 @@
 package main
 
 import (
-	"github.com/tevity/go-getting-started/models"
 	"fmt"
+
+	"github.com/tevity/go-getting-started/models"
 )
 
 func main() {
-	u := models.User {
-		ID: 2,
+	u := models.User{
+		ID:        2,
 		FirstName: "Trisha",
-		LastName: "McMillan",
+		LastName:  "McMillan",
 	}
 	fmt.Println(u)
 }
