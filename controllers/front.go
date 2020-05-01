@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"encoding/json"
 	"net/http"
 )
 
@@ -10,4 +11,9 @@ func RegisterControllers() {
 
 	http.Handle("/users", *uc)
 	http.Handle("/users/", *uc)
+}
+
+func encodeResponseAsJSON(data interface{}, w http.ResponseWriter) {
+	encoder := json.NewEncoder(w)
+	encoder.Encode(data)
 }

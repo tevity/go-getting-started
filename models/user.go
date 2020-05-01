@@ -13,8 +13,10 @@ type User struct {
 }
 
 var (
-	users  []*User
-	nextID = 1
+	users = []*User{
+		{ID: 1, FirstName: "Kevin", LastName: "Gurton"},
+	}
+	nextID = len(users)
 )
 
 // GetUsers dsaa
